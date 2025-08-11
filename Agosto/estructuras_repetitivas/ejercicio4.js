@@ -50,7 +50,7 @@ function menu() {
                 } while (intento !== numeroSecreto && intentos < maxIntentos);
 
                 if (intento !== numeroSecreto) {
-                    console.log(`Pailas, se acabaron los intentos 😢. El número era ${numeroSecreto}.`);
+                    console.log(`lo siento, se acabaron tus intentos . El número era ${numeroSecreto}.`);
                 }
                 break;
 
