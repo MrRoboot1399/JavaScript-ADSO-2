@@ -1,0 +1,44 @@
+<!--declaro que el documento esta en html-->
+<DOCTYPE html>
+<!--comienza el documento y especifica el idioma-->
+<html lange="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Documents</title>
+</head>
+<body>
+  <div id="numero1" style =" background-color: rgb(86, 43, 54);"></div>
+  <div id="numero2" style =" background-color: rgb(171, 42, 81);"></div>
+  <div id="suma" style ="  background-color: rgb(255, 0, 21);"></div>
+  <div id="resta" style ="  background-color: rgb(154, 45, 54);"></div>
+  <div id="multiplicacion" style =" background-color: rgb(223, 13, 13);"></div> 
+  <div id="division" style =" background-color: rgb(217, 54, 92);"></div>
+
+  <script>
+      const numero1 = parseInt(prompt("Ingrese un número :"));
+      const numero2 = parseInt(prompt("Ingresa un número:"));
+
+      document.getElementById("numero1").innerHTML = "Primer número: " + numero1;
+      document.getElementById("numero2").innerHTML = "Segundo número: " + numero2;
+
+      const suma =numero1 + numero2;
+      console.log("La suma es: " + suma);
+        document.getElementById("suma").innerHTML = "La suma es: " + suma;
+      
+      const resta = numero1 - numero2;
+      console.log("La resta es: " + resta);
+      document.getElementById("resta").innerHTML = "La resta es: " + resta;
+
+      const multiplicacion = numero1 * numero2;
+       document.getElementById("multiplicacion").innerHTML = "La multiplicacion es: " + multiplicacion;
+      console.log("La multiplicación es: " + multiplicacion);
+      
+      const division = numero1 / numero2;
+      console.log("La división es: " + division);
+      document.getElementById("division").innerHTML = "La division es: " + division;
+      
+  </script>
+
+</body>
+</html>
