@@ -1,10 +1,21 @@
 import { areacirculo, areatriangulo } from "./funciones.js";
-document.querySelector("#btncalcular").addEventListener("click", calcularArea);
+
+document.getElementById("btnCalcular").addEventListener("click", calcularArea);
 
 function calcularArea() {
-    alert("Calculando área del triángulo");
-    const radio = document.querySelector("#txtradio").value;
-    const area = areacirculo(radio);
-    console.log(area);
-    document.querySelector("#txtresultado").value = area;
+  console.log("Entró a la función ");
+  const radio = Number(document.getElementById("mono").value);
+  const area = areacirculo(radio);
+  document.getElementById("txtresultado").value = area;
+
+
+  
 }
+
+document.querySelector("#btnCalcular_trian").addEventListener("click", calcularArea);
+const base = Number(document.getElementById("txtresultado_trian").value);
+const altura = Number(document.getElementById("txtresultado_trian").value);
+const area_trian = areatriangulo(base, altura);
+document.getElementById("txtresultado_trian").value = area_trian; 
+
+//document.getElementById("btnCalcular").addEventListener("click", calcularArea);

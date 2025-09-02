@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alcancía</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .contenedor-monedas {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0;
+    }
+
+    .moneda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .img-moneda {
+      width: 100px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .img-moneda:hover {
+      transform: scale(1.1);
+    }
+
+    #resultados {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alcancía</h1>
+
+  <div class="contenedor-monedas">
+    <div class="moneda">
+      <img src="moneda.png.jpg" class="img-moneda" data-valor="200">
+      <p id="contador200">Monedas 200: 0</p>
+    </div>
+    <div class="moneda">
+      <img src="moned.png.jpg" class="img-moneda" data-valor="500">
+      <p id="contador500">Monedas 500: 0</p>
+    </div>
+    <div class="moneda">
+      <img src="monwed.png.jpg" class="img-moneda" data-valor="1000">
+      <p id="contador1000">Monedas 1000: 0</p>
+    </div>
+  </div>
+
+  <div id="resultados">
+    <h2 id="total">Total: $0</h2>
+  </div>
+
+  <button id="romper">Romper Alcancía</button>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

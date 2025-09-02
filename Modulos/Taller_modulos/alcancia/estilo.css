@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.monedas {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.moneda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-moneda {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.img-moneda:hover {
+  transform: scale(1.1);
+}
